@@ -39,7 +39,7 @@ view: transactions {
     sql: ${TABLE}.transaction_date ;;
   }
   dimension: isweekend {
-    group_label: "Transaction Dates"
+    group_label: "Transaction Date"
     label: "Is Weekend?"
     type: yesno
     sql: ${TABLE}.isweekend ;;

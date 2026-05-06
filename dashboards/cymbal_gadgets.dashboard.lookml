@@ -137,9 +137,9 @@
   - title: Average Product Rating
     name: Average Product Rating
     model: cymbal_gadgets
-    explore: transactions
+    explore: product_reviews
     type: looker_bar
-    fields: [product_reviews.average_rating, transactions.category]
+    fields: [product_reviews.average_rating, product_information.category]
     sorts: [product_reviews.average_rating desc]
     limit: 500
     column_limit: 50
@@ -175,10 +175,10 @@
     interpolation: linear
     defaults_version: 1
     listen:
-      Brand: transactions.brand
-      Category: transactions.category
-      Product Name: transactions.productname
-      Transaction Date: transactions.transaction_date
+      Brand: product_information.brand
+      Category: product_information.category
+      Product Name: product_information.productname
+      Transaction Date: product_reviews.reviewdate_date
     row: 0
     col: 12
     width: 12
@@ -342,4 +342,3 @@
     explore: transactions
     listens_to_filters: []
     field: transactions.transaction_date
-

@@ -1,3 +1,6 @@
 .gemini/**
 .env
 .vscode/**
+.agents/**
+.env
+start-toolbox.sh
